@@ -85,27 +85,27 @@ Just `<conclusion>` - fact
 
 ### Definition
 ```
-						    +--------+ 
-							|  col0  |
-							+--------+
+				+--------+ 
+				|  col0  |
+				+--------+
     Fruit("apple")  		| apple  |
     Fruit("orange") 		| orange |
     Fruit("apple")  		| apple  |
-							+--------+
+				+--------+
 ```
 ### Intersection
 ```
     Q("a", "b")
-    Q("a", "b") 					+-------+-------+
-    Q("x", "y") 					| col1  | col2  |
-								    +-------+-------+
-    R("b", "t") 					|   a   |   t   |
-    R("b", "t") 					|   a   |   t   |
-    R("b", "t") 					|   a   |   t   |
-								    |   a   |   t   |
-    P(x, z) :- Q(x, y), R(y, z) 	|   a   |   t   |
-								    |   a   |   t   |
-									+-------+-------+
+    Q("a", "b") 				+-------+-------+
+    Q("x", "y") 				| col1  | col2  |
+					    	+-------+-------+
+    R("b", "t") 				|   a   |   t   |
+    R("b", "t") 				|   a   |   t   |
+    R("b", "t") 				|   a   |   t   |
+						|   a   |   t   |
+    P(x, z) :- Q(x, y), R(y, z) 		|   a   |   t   |
+					    	|   a   |   t   |
+						+-------+-------+
 ```
 ### **Example:**
 
